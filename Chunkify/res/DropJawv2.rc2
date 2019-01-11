@@ -1,0 +1,119 @@
+//
+// DROPJAWV2.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Add manually edited resources here...
+
+#define DJ_WM_LBTNCLICK                 WM_USER+101	// Meddelanden
+#define DJ_WM_LBTNHOLD                  WM_USER+102
+#define DJ_WM_SRCBTNCLICK               WM_USER+103
+#define DJ_WM_FWDBTNCLICK               WM_USER+104
+#define DJ_WM_BCKBTNCLICK               WM_USER+105
+#define DJ_WM_MOUSEOVER				    WM_USER+106
+#define DJ_WM_DRAG				        WM_USER+107
+#define DJ_WM_DRAGEND				    WM_USER+108
+#define DJ_WM_DROPACCEPT				WM_USER+109
+#define DJ_WM_DROP				        WM_USER+110
+#define DJ_WM_UPDATEGROUP				WM_USER+111
+#define DJ_WM_UPDATE					WM_USER+112
+#define DJ_WM_LISTGROUP					WM_USER+113
+#define DJ_WM_POPUPDEAD					WM_USER+114
+#define DJ_WM_CLOSEPOPUP                WM_USER+115
+#define DJ_WM_SCROLLUP	                WM_USER+116
+#define DJ_WM_SCROLLDOWN                WM_USER+117
+#define DJ_WM_SELECT	                WM_USER+118
+#define DJ_WM_DESELECT	                WM_USER+119
+#define DJ_WM_UPDATESTATIC	            WM_USER+120
+#define DJ_WM_EDITENTER		            WM_USER+121
+#define DJ_WM_CHECK_MOUSEOVER           WM_USER+122
+
+#define IDC_SEARCHBTN                   1901		// Enskilda knappar enum. från 1901
+#define IDC_REGROUPBTN                  1902		
+#define IDC_CLEARBTN                    1903		
+#define IDC_STOPBTN						1904
+#define IDC_DJCOMBO						1905
+#define IDC_DJLIST						1906
+#define IDC_QUERYEDIT					1907
+#define IDC_LISTBOX						1908
+#define IDC_BLOBWND						1909
+#define IDC_LISTPOPUP					1910
+#define IDC_GENRETAB					1911
+#define IDC_ANIMCTRL					1912
+#define IDC_REGROUPWND					1913
+#define IDC_LISTBOXUPBTN				1914
+#define IDC_LISTBOXDWNBTN				1915
+#define IDC_BLOBWNDUPBTN				1916
+#define IDC_BLOBWNDDWNBTN				1917
+
+#define IDC_BLOBENUM					2001		// Blobbar enum. från 2001
+
+#define DJ_BP_CENTER                    2101		// Bitmap Position från 2101
+#define DJ_BP_TOPLEFT                   2102
+#define DJ_BP_BOTRIGHT                  2103
+
+#define DJ_BS_NORMAL                    1			// Button State 
+#define DJ_BS_MOUSEOVER                 2
+#define DJ_BS_PRESSED                   4
+#define DJ_BS_CHOSEN                    8
+#define DJ_BS_DISABLED                  16
+
+#define DJ_BT_MOUSEOVER                 2301		// Button Timer från 2301
+#define DJ_BT_LDOWN                     2302
+#define DJ_SP_CENTER                    2401		// String Position från 2401
+#define DJ_SP_MIDTOP                    2402
+#define DJ_SP_MIDBOT                    2403
+#define DSTCOPY							(DWORD)0x00AA0029  // dest = dest
+#define IDM_DJ_PREFDLG					0x00A0		// !!!! PÅHITTAD IDM_ - KONTROLLERA !!!!
+
+#define DJ_WINDOW_WIDTH					800			// fönsterbredd 
+#define DJ_WINDOW_HEIGHT				600			// fönsterhöjd 
+#define DJ_BITMAP_WIDTH					41			// blobstorlek
+#define DJ_BITMAP_HEIGHT				40			// blobstorlek
+#define DJ_BLOB_WIDTH					51			// blobstorlek inkl mellanrum
+#define DJ_BLOB_HEIGHT					42			// blobstorlek inkl mellanrum
+#define DJ_CLUSTERSTATIC_WIDTH			231			// klustertextstorlek inkl mellanrum
+#define DJ_CLUSTERSTATIC_HEIGHT			42			// klustertextstorlek inkl mellanrum
+#define DJ_LISTPOPUP_INDENT				20			// indrag 
+
+#define DJ_FONT_SIZE					12			// storlek på typsnitt
+#define DJ_FONT_TYPEFACE				"Arial"		// typsnitt
+
+#define DJ_INDEX_MASK					0			// Masker		0-16 
+#define DJ_INDEX_CRATER					0			// Gropar		0-14
+#define DJ_INDEX_MOUSEOVER				19			// Markering	19-33
+#define DJ_INDEX_GREEN					34			// Blob green	34-48
+#define DJ_INDEX_YELLOW					51			// Blob	yellow	51-65	 
+#define DJ_INDEX_BROWN					68			// Blob	brown	68-82
+#define DJ_INDEX_PINK					85			// Blob	pink	85-99
+#define DJ_INDEX_DBLUE					102			// Blob	dblue	102-116
+#define DJ_INDEX_LBLUE					119			// Blob	lblue	119-133
+#define DJ_INDEX_SEAGREEN				136			// Blob	seagreen	136-150
+#define DJ_INDEX_PEAGREEN				153			// Blob	peagreen	153-167
+#define DJ_INDEX_ORANGE					170			// Blob	orange	170-184
+#define DJ_INDEX_RED					187			// Blob	red		187-201
+
+#define DJ_WINDOW_COLOR					RGB( 142, 148, 149 )	// bakgrundsfärg fönster
+#define DJ_QUERYEDIT_COLOR				RGB( 239, 239, 214 )	// bakgrundsfärg queryEdit
+#define DJ_LISTBOX_ENTRY				RGB( 239, 239, 214 )	// bakgrundsfärg text i listBox
+#define DJ_LISTBOX_COLOR				RGB( 115, 140, 148 )	// bakgrundsfärg listBox
+#define DJ_LISTPOPUP_COLOR				RGB( 255, 255, 255 )	// bakgrundsfärg listPopup
+#define DJ_LISTPOPUP_HILITE				RGB( 0, 66, 165 )		// markeringsfärg listPopup
+#define DJ_STATIC_COLOR					RGB( 107, 107, 107 )	// bakgrundsfärg static
+
+#define DJ_YELLOW_COLOR					RGB( 166, 128, 58 )
+#define DJ_PINK_COLOR					RGB( 183, 90, 119 )
+#define DJ_SEAGREEN_COLOR				RGB( 74, 148, 142 )
+#define DJ_PEAGREEN_COLOR				RGB( 127, 153, 57 )
+#define DJ_RED_COLOR					RGB( 214, 55, 61 )
+#define DJ_ORANGE_COLOR					RGB( 200, 112, 26 )
+#define DJ_LBLUE_COLOR					RGB( 34, 114, 168 )
+#define DJ_GREEN_COLOR					RGB( 98, 128, 89 )
+#define DJ_DBLUE_COLOR					RGB( 75, 88, 115 )
+#define DJ_BROWN_COLOR					RGB( 159, 62, 11 )
+/////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,74 @@
+void main()
+{
+	CInternetSession sess("MFC HTTPS Tear Fragment");
+
+	try
+	{
+		CHttpConnection* pConnect = sess.GetHttpConnection(
+							"secure.safesite.com", INTERNET_DEFAULT_HTTPS_PORT);
+
+		CHttpFile* pFile = pConnect->OpenRequest(CHttpConnection::HTTP_VERB_GET,
+				"/cgi-bin/winzip1a", NULL, 1,
+				NULL, NULL, INTERNET_FLAG_SECURE | INTERNET_FLAG_EXISTING_CONNECT );
+
+		if (!pFile->SendRequest())
+			printf("SendRequest() failed\n");
+		pFile->SetReadBufferSize(4096); // fixed in MFC 4.2a
+
+		char szBuffer[1024];
+		while (pFile->ReadString(szBuffer, 1023))
+			printf("%s", szBuffer);
+
+		pFile->Close();
+		delete pFile;
+		delete pConnect;
+	}
+	catch (CException* pEx)
+	{
+		char sz[1024];
+		pEx->GetErrorMessage(sz, 1024);
+		printf("Exception: %s\n", sz);
+		printf("**** WARNING ****\n");
+		printf("This sloppily-coded program probably leaked resources and
+		memory.\n");
+	}
+}
+
+**********************************************************************************
+
+		LPVOID lpMsgBuf;
+
+		FormatMessage( 
+			FORMAT_MESSAGE_ALLOCATE_BUFFER | FORMAT_MESSAGE_FROM_SYSTEM,
+			NULL,
+			GetLastError(),
+			MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT), // Default language
+			(LPTSTR) &lpMsgBuf,
+			0,
+			NULL 
+		);
+
+		// Display the string.
+		MessageBox( NULL, (LPCTSTR)lpMsgBuf, "GetLastError", MB_OK|MB_ICONINFORMATION );
+
+		// Free the buffer.
+		LocalFree( lpMsgBuf );
+
+**********************************************************************************
+
+// Template collection helper function.
+//
+template <> void AFXAPI DestructElements<CString>( CString *pstrKey, int nCount )
+{
+    for ( int i=0; i<nCount; i++, pstrKey++ )
+		delete pstrKey;
+}
+
+**********************************************************************************
+
+		g_ChunkifyAgents.pFetchAgent= new CDJFetchAgent(
+											nMaxFileSize,
+											pszTmpDirectory,
+											DJ_DEBUG_DO_LOGGING,
+											g_strHomeDir + DJ_DEBUG_LOG_FILENAME );
+

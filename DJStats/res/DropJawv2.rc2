@@ -1,0 +1,28 @@
+//
+// DROPJAWV2.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Add manually edited resources here...
+
+
+#define DJ_INDEX_MASK					0			// Masker		0-16 
+#define DJ_INDEX_CRATER					0			// Gropar		0-14
+#define DJ_INDEX_MOUSEOVER				19			// Markering	19-33
+#define DJ_INDEX_GREEN					34			// Blob green	34-48
+#define DJ_INDEX_YELLOW					51			// Blob	yellow	51-65	 
+#define DJ_INDEX_BROWN					68			// Blob	brown	68-82
+#define DJ_INDEX_PINK					85			// Blob	pink	85-99
+#define DJ_INDEX_DBLUE					102			// Blob	dblue	102-116
+#define DJ_INDEX_LBLUE					119			// Blob	lblue	119-133
+#define DJ_INDEX_SEAGREEN				136			// Blob	seagreen	136-150
+#define DJ_INDEX_PEAGREEN				153			// Blob	peagreen	153-167
+#define DJ_INDEX_ORANGE					170			// Blob	orange	170-184
+#define DJ_INDEX_RED					187			// Blob	red		187-201
+
+/////////////////////////////////////////////////////////////////////////////

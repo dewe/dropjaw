@@ -1,0 +1,86 @@
+**************************************************************
+* ToDo_list.txt, Kvar att göra på chunkify.
+*
+**************************************************************
+
+
+--------------------------------------------------------------
+* To Do!
+
+
+
+--------------------------------------------------------------
+* Borttaget - skall inte göras
+
+Diskussion-specifika prylar, t ex Subject, Thread...
+
+Kontrollera att tmpfilskatalogen existerar.
+
+Fixa läsning från filer/lokal sökning.
+
+Meta-mått, t ex antal länkar per rad, och dess spridning. Liten spridning,
+
+? Skall vi inte räkna radlängd? Borde vara kopplat till listor mm.
+Ta bort tomma rader, eller linefeeds mellan taggar: >LF< bort.
+
+? Plocka hem frames och lägg i samma fil.
+
+--------------------------------------------------------------
+* Klart
+
+Korrekt Id-sträng till http-server...
+
+Justera termvektorernas storlekar... 
+behöver inte vara lika stora som termindexmap.
+
+Effektivitet i klustringen...
+
+Frigöra minne i dokumenten. 
+Radera innehåll i factorscore map, feature scores.
+
+CDJClusterAgent* DJCreateChunkify( int nClusters, 
+								   int nMaxFileSize,
+								   BOOL bSaveTmpFiles, /* = FALSE */
+								   LPCTSTR pszTmpDirectory /* = NULL */ )
+
+Hantera "arbetskatalogen" som bas... katalogen får jag som global av Hallis.
+Byt efternamn på stoplist mm. Kolla vilka filer som är aktuellast...
+
+KillThread!
+
+Ta bort genre agent.
+
+Begränsning av storleken på dokument.
+Avbrytning av nedladdning...
+
+Byt ut ensamma carriage return mot linefeeds. 0x0d till 0x0a.
+
+Plocka bort &auml; m.fl.
+Fixa &nbsp; speciellt...
+
+Ord med enbart tecken som inte är alpha bör inte tillåtas i termIndexMap.
+Visa inte ord med < x bokstäver i digest. (x=3?)
+
+Döp om en del TEST-parametrar till CHUNKIFY...
+
+Radera även filer som blivit 'aborted', t ex efter en timeout.
+(alternativt: Radera tempfiler efter stängning om det inte finns 
+någon annan easify/chunkify igång.)
+
+Kolla att inte fetchegent levererar helt tomma filer...
+
+Lägga in sleep(0) i algoritmerna...
+
+Mer info om dokumenten...
+
+Fixa sökfrågorna ok, (farliga tecken etc)
+
+Låt fetchagent skicka meddelande med antal nedladdade bytes...
+AfxGetMainWnd()->PostMessage( DJ_WM_FETCHAGENT_READ, (WPARAM)nRead )
+
+Skicka message till Easify om antal förväntade URLer.
+AfxGetMainWnd()->PostMessage( DJ_WM_URLAGENT_URLS, (WPARAM)nExpect);
+
+Initiera Maps!
+
+
